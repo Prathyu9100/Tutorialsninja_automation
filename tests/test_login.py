@@ -36,7 +36,7 @@ def test_login_invalid(setup):
     driver.find_element(By.XPATH, "//input[@value='Continue']").click()
     time.sleep(2)
     expected_Failure=driver.find_element(By.XPATH,"//div[@class='alert alert-danger alert-dismissible']").text
-    assert expected_Failure == "Warning: You must agree to the Privacy Policy!"
+    assert expected_Failure == "Warning: You must agree to the Privacy Policy!py"
     time.sleep(3)
     driver.quit()
 def time_current():
