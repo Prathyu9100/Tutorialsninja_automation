@@ -1,0 +1,17 @@
+@pytest.hookimpl(hookwrapper=True)
+def pytest_runtest_makereport(item):
+    outcome = yield
+    report = outcome.get_result()
+
+    print("Phase:", report.when)
+
+    if report.when == "call" and report.failed:
+        print("FAILED TEST DETECTED")
+
+        driver = item.funcargs["setup"]
+
+        result = driver.save_screenshot(
+            f"screenshots/{item.name}.png"
+        )
+
+        print("Screenshot saved:", result)
