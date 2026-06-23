@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-
+from utilities.waits import Waits
 
 class Proceed_Page:
     def __init__(self,driver):
@@ -11,6 +11,7 @@ class Proceed_Page:
         # ---------------- ACTION METHODS ----------------
 
     def click_to_check_agree(self):
+        Waits.wait_for_presence(self.driver,self.check_agree)
         self.driver.find_element(*self.check_agree).click()
     def click_to_proceed_order(self):
         self.driver.find_element(*self.proceed).click()

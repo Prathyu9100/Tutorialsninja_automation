@@ -21,3 +21,7 @@ class Waits:
         return WebDriverWait(driver, timeout).until(
             EC.visibility_of_all_elements_located(locator)
         )
+    @staticmethod
+    def wait_for_presence(driver, locator, timeout=10):
+        return WebDriverWait(driver, timeout).until(
+            EC.presence_of_element_located(locator))

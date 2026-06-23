@@ -18,17 +18,27 @@ def test_correct_login(setup):
     order=CartPage.Place_order_page(driver)
     proceed=ProceedPage.Proceed_Page(driver)
 
-    driver.implicitly_wait(3)
-    home.search("potato")
     logger.info("Searching for potato")
+    home.search("potato")
+
     home.increment_item("Potato - 1 Kg")
-    home.add_to_cart("Potato - 1 Kg")
+
     logger.info("Adding potato to cart")
-    home.bag_click()
+    home.add_to_cart("Potato - 1 Kg")
+
     logger.info("check the items in bag")
+    home.bag_click()
+
+    logger.info("proceed to check out")
     cart.checkout()
+
+    logger.info("place the order")
     order.click_to_place_order()
+
+    logger.info("clicking agree")
     proceed.click_to_check_agree()
+
+    logger.info("Proceed the order finally")
     proceed.click_to_proceed_order()
     expected_text=proceed.click_to_confirmatin_text()
     logger.info("order placed")
