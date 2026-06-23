@@ -1,0 +1,23 @@
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+
+class Waits:
+
+    @staticmethod
+    def wait_for_visibility(driver, locator, timeout=10):
+        return WebDriverWait(driver, timeout).until(
+            EC.visibility_of_element_located(locator)
+        )
+
+    @staticmethod
+    def wait_for_clickable(driver, locator, timeout=10):
+        return WebDriverWait(driver, timeout).until(
+            EC.element_to_be_clickable(locator)
+        )
+
+    @staticmethod
+    def wait_for_all_elements(driver, locator, timeout=10):
+        return WebDriverWait(driver, timeout).until(
+            EC.visibility_of_all_elements_located(locator)
+        )

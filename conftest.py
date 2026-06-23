@@ -1,6 +1,7 @@
 import pytest
 from selenium import webdriver
 import allure
+from utilities.config import URL
 
 def pytest_addoption(parser):
     parser.addoption("--browser")
@@ -15,7 +16,7 @@ def setup(request):
         driver = webdriver.Edge()
     else:
         raise ValueError(f"Unsupported browser: {browser}")
-    driver.get("https://rahulshettyacademy.com/seleniumPractise/#/")
+    driver.get(URL)
     driver.maximize_window()
     yield driver
     driver.quit()
