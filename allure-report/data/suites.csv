@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","196","test_empty_login","package1","2026-06-27","passed","2026-06-27","","test_python_file","",""
+"","2031","test_correct_login","package1","2026-06-27","passed","2026-06-27","","test_python_file","",""
+"","1232","test_correct_login","package1","2026-06-27","passed","2026-06-27","","test_multiple_cart","",""
+"","186","test_search","package1","2026-06-27","passed","2026-06-27","","test_greenkart_title","",""
+"","206","test_cart_count","package1","2026-06-27","failed","2026-06-27","","test_greenkart_title","",""
+"","18","test_correct_login","package1","2026-06-27","passed","2026-06-27","","test_greenkart_title","",""

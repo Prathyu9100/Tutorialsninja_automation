@@ -1,0 +1,8 @@
+2026-06-27 12:18:29,598 - INFO - Searching for potato
+2026-06-27 12:18:29,905 - INFO - Adding potato to cart
+2026-06-27 12:18:30,022 - INFO - check the items in bag
+2026-06-27 12:18:30,212 - INFO - proceed to check out
+2026-06-27 12:18:30,343 - INFO - place the order
+2026-06-27 12:18:30,964 - INFO - clicking agree
+2026-06-27 12:18:31,570 - INFO - Proceed the order finally
+2026-06-27 12:18:31,674 - INFO - order placed

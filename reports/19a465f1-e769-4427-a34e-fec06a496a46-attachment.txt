@@ -1,0 +1,8 @@
+[32mINFO    [0m utilities.logger:test_python_file.py:21 Searching for potato
+[32mINFO    [0m utilities.logger:test_python_file.py:26 Adding potato to cart
+[32mINFO    [0m utilities.logger:test_python_file.py:29 check the items in bag
+[32mINFO    [0m utilities.logger:test_python_file.py:32 proceed to check out
+[32mINFO    [0m utilities.logger:test_python_file.py:35 place the order
+[32mINFO    [0m utilities.logger:test_python_file.py:38 clicking agree
+[32mINFO    [0m utilities.logger:test_python_file.py:41 Proceed the order finally
+[32mINFO    [0m utilities.logger:test_python_file.py:44 order placed
