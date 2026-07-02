@@ -2,4 +2,4 @@
 cd /d "%~dp0"
 
 python -m pip install -r requirements.txt
-python -m pytest --browser chrome --alluredir=reports
+python -m pytest --browser %browser% --alluredir=reports
