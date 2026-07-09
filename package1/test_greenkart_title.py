@@ -22,5 +22,5 @@ def test_cart_count(setup):
     home = HomePage.Home_Page(driver)
     home.add_to_cart("Brocolli - 1 Kg")
     cart_count=home.get_item_count()
-    assert cart_count==1
+    assert cart_count=='1'
 
